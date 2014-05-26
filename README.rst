@@ -2,6 +2,8 @@
 Status of Tengwar fonts for LaTeX
 =================================
 
+The script 'install-tengwar-scripts.sh'
+
 The LaTeX package TengwarScript 1.3 lists several fonts for writing in Tengwar with LaTeX.
 However, the package has not been updated since 2007,
 and many of the fonts have become hard to find.
@@ -63,8 +65,6 @@ http://home.student.uu.se/?languageId=1j/jowi4905/fonts/annatar.html
 http://web.archive.org/web/20130917205707/http://home.student.uu.se/?languageId=1j/jowi4905/fonts/annatar.html
 
 Fortunately, third parties have preserved the fonts.
-http://www.fontspace.com/johan-winge/tengwar-annatar
-http://www.fontspace.com/download/2244/280a9b63cbfa4ca581ffbc45bd15d346/johan-winge_tengwar-annatar.zip
 http://www.dafont.com/tengwar-annatar.font
 http://img.dafont.com/dl/?f=tengwar_annatar
 
@@ -81,16 +81,20 @@ The site it has been moved to has the fonts removed:
 http://www.acondia.com/fonts/tengwar/index.html
 
 Neither of them has an Internet Archive backup.
+
 https://web.archive.org/web/*/http://www.acondia.com/fonts/tengwar/index
 https://web.archive.org/web/http://www.geocities.com/fontwizard/font%20tengwar/index.html
 
 Fortunately, third parties have preserved the fonts.
-http://www.fontspace.com/dan-smiths-fantasy-fonts/tengwar-quenya
-http://www.fontspace.com/download/1743/f917dbc46e664527a262b46df3f53d59/dan-smiths-fantasy-fonts_tengwar-quenya.zip
-http://www.fontspace.com/dan-smiths-fantasy-fonts/tengwar-sindarin
-http://www.fontspace.com/download/1744/e6ef9550f05b4c878c5710b73a60191b/dan-smiths-fantasy-fonts_tengwar-sindarin.zip
-http://www.fontspace.com/dan-smiths-fantasy-fonts/tengwar-noldor
-http://www.fontspace.com/download/1742/dab2eeb9353f4a1ba471c7bb2b49d46c/dan-smiths-fantasy-fonts_tengwar-noldor.zip
+
+http://www.dafont.com/tengwar-quenya.font
+http://img.dafont.com/dl/?f=tengwar_quenya
+
+http://www.dafont.com/tengwar-sindarin.font
+http://img.dafont.com/dl/?f=tengwar_sindarin
+
+http://www.dafont.com/tengwar-noldor.font
+http://img.dafont.com/dl/?f=tengwar_noldor
 
 --------------
 Tengwar Teleri
