@@ -1,8 +1,38 @@
-=================================
-Status of Tengwar fonts for LaTeX
-=================================
+============================================================
+Writing with Tolkien's Elvish alphabets (Tengwar) with LaTeX
+============================================================
 
-The script 'install-tengwar-scripts.sh'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Quickstart guide to using Tengwar fonts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Option 1: Move to a temporary folder like ``~/Downloads`` and run the `install script`_.
+
+Option 2: Do the same steps in the install script, but manually.
+
+#. Ensure you have the `TengwarScript`_ package installed.
+   For example, run ``kpsewhich tengwarscript.sty``.
+   If you get an output such as::
+   
+    $ kpsewhich tengwarscript.sty
+    /usr/share/texlive/texmf-dist/tex/latex/tengwarscript/tengwarscript.sty
+   
+   then you are fine.
+#. Run ``updmap --enable Map=tengwarscript.map``. Without this command, you must `add this line to every Tex file`_ that uses Tengwar fonts::
+
+    \pdfmapfile{=tengwarscript.map}
+
+#. Make the directory ``~/texmf/fonts/truetype/``.
+#. Download the Tengwar fonts you want and unzip them there.
+#. Try 
+
+.. _install script: ./install-tengwar-scripts.sh
+.. _TengwarScript: http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
+.. _add this line to every Tex file: http://tex.stackexchange.com/questions/56487/tengwar-script-in-tex-live
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Status of Tengwar fonts for LaTeX
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The LaTeX package TengwarScript 1.3 lists several fonts for writing in Tengwar with LaTeX.
 However, the package has not been updated since 2007,
@@ -22,6 +52,7 @@ Unicode Tengwar Parmaite
 ------------------------
 
 Deprecated in Tengwarscript 1.3, but still available and on the Internet Archive.
+The installer script skips this one.
 http://www.uv.es/~conrad/tolkien.html
 http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz
 http://web.archive.org/web/20060720223901/http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz
@@ -56,9 +87,9 @@ http://tengwarformal.limes.com.pl/
 http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip
 http://web.archive.org/web/20120716182423/http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip
 
---------------
+---------------
 Tengwar Annatar
---------------
+---------------
 Website returns 200 OK, but has been taken down since 2013-08-30.
 No backup on Internet Archive.
 http://home.student.uu.se/?languageId=1j/jowi4905/fonts/annatar.html
@@ -81,8 +112,8 @@ The site it has been moved to has the fonts removed:
 http://www.acondia.com/fonts/tengwar/index.html
 
 Neither of them has an Internet Archive backup.
-
-https://web.archive.org/web/*/http://www.acondia.com/fonts/tengwar/index
+ 
+https://web.archive.org/web/http://www.acondia.com/fonts/tengwar/index
 https://web.archive.org/web/http://www.geocities.com/fontwizard/font%20tengwar/index.html
 
 Fortunately, third parties have preserved the fonts.
