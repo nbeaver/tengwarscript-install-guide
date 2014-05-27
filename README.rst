@@ -1,6 +1,6 @@
-============================================================
-Writing with Tolkien's Elvish alphabets (Tengwar) with LaTeX
-============================================================
+===========================================================
+Writing with Tolkien's Elvish alphabet (Tengwar) and LaTeX
+===========================================================
 
 ~~~~~~~~~~~~~~~
 What's Tengwar?
@@ -18,7 +18,7 @@ TengwarScript does not use Tengwar characters directly,
 since Tengwar is `still being standardized`_ into Unicode.
 
 There are `other methods`_ for writing Tengwar, including XeTeX, but they will not be used in this guide.
-This will focus on producing PDFs. Look elsewhere for writing with Tengwar `on the web`.
+This will focus on producing PDFs. Look elsewhere for writing with Tengwar `on the web`_.
 
 This guide was tested on Debian unstable with TeX Live 2013,
 but it should be applicable to most LaTeX installs.
@@ -77,7 +77,7 @@ After performing option 1 or 2, run this example script in your favorite LaTeX e
 This will use the default Parmaite font to write the Tengwar word *quetta*, meaning *word*.
 (This is an example from the tengwarscript documentation.)
 
-Once you have a working installation, you can try more `interesting examples`.
+Once you have a working installation, you can try more `interesting examples`_.
 
 .. _interesting examples: http://tex.stackexchange.com/questions/13015/what-package-allows-elvish-in-tex
 
@@ -86,7 +86,7 @@ Troubleshooting
 ---------------
 
 If you get errors such as
-``!pdfTeX error: pdflatex (file Parmaite.ttf): cannot open TrueType font file for reading``
+``!pdfTeX error: pdflatex (file Parmaite.ttf): cannot open TrueType font file for reading``,
 try changing the font::
 
     \documentclass{minimal}
@@ -105,7 +105,7 @@ or try explicitly adding the map file::
     \end{document}
 
 Make sure the names of the fonts match the names in `tengwarscript.map`_.
-You will need to do a lot of renaming of the ``.ttf`` files if you take the manual route.
+You will need to do a lot of renaming of the ``.ttf`` files if you take the manual route (Option 2).
 
 Note: the ``tengtest.tex`` file in the documentation requires ``texlive-lang-spanish``.
 
@@ -200,7 +200,13 @@ This site seems to be the new home of the font.
 
 http://web.comhem.se/alatius/fonts/annatar.html
 
-Third parties also have preserved the fonts.
+It and the font download is preserved in the Internet Archive.
+
+https://web.archive.org/web/http://web.comhem.se/alatius/fonts/annatar.html
+
+https://web.archive.org/web/http://web.comhem.se/alatius/fonts/tngan120.zip
+
+Third parties also have preserved the fonts, although not completely.
 
 http://www.dafont.com/tengwar-annatar.font
 
