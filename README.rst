@@ -254,3 +254,14 @@ http://img.dafont.com/dl/?f=tengwar_teleri
 The page is on the Internet Archive, but not the font files due to DaFont's `robots.txt <http://img.dafont.com/robots.txt>`_.
 
 http://web.archive.org/web/20120222184558/http://www.dafont.com/font.php?file=tengwar_teleri
+
+~~~~~~~~~~~~~~~~~
+Legal information
+~~~~~~~~~~~~~~~~~
+
+This guide is released under a `Creative Commons Attribution-ShareAlike 4.0 International License`_.
+
+The associated installation script is released under the `LaTeX Project Public License`_.
+
+.. _Creative Commons Attribution-ShareAlike 4.0 International License: http://creativecommons.org/licenses/by-sa/4.0/
+.. _LaTeX Project Public License: http://latex-project.org/lppl/
