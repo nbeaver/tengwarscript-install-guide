@@ -10,14 +10,16 @@ The Tengwar comprise an alphabet invented by J.R.R. Tolkien for writing Quenya o
 It can be used for other languages, too, `including English`_.
 
 This is a guide for getting started producing Tengwar with the LaTeX typesetting system.
-It will use the `TengwarScript`_ package, which requires custom fonts.
-The fonts are not included in the TengwarScript package,
-presumably since the legal status of the fonts is not clear.
-
+It will use the `TengwarScript`_ package
 TengwarScript does not use Tengwar characters directly,
 since Tengwar is `still being standardized`_ into Unicode.
+Instead, it uses custom fonts.
+The fonts are not included in the TengwarScript package,
+presumably since the legal status of the fonts is not clear.
+The guide includes a companion script to automate the downloading, installing, and configuring of the fonts,
+most of which are TrueType fonts.
 
-There are `other methods`_ for writing Tengwar, including XeTeX, but they will not be used in this guide.
+There `are`_ `other`_ `methods`_ for writing Tengwar with TeX, `including XeTeX`, but they will not be used in this guide.
 This will focus on producing PDFs. Look elsewhere for writing with Tengwar `on the web`_.
 
 This guide was tested on Debian unstable with TeX Live 2013,
@@ -26,7 +28,10 @@ but it should be applicable to most LaTeX installs.
 .. _including English: http://3rin.gs/tengwar
 .. _TengwarScript: http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
 .. _still being standardized: http://www.evertype.com/standards/csur/tengwar.html
-.. _other methods: http://tex.stackexchange.com/a/57457
+.. _are: http://www.ctan.org/pkg/tolkienfonts
+.. _other: http://www.ctan.org/pkg/elvish
+.. _methods: http://www.ctan.org/pkg/tengtex
+.. _including XeTeX: http://tex.stackexchange.com/a/57457
 .. _on the web: http://freetengwar.sourceforge.net/embedding.html
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,7 +44,7 @@ Installation
 
 Option 1: Run the `install script`_.
 
-Option 2: Do the same steps in the install script, but manually.
+Option 2: Do the same steps as the install script, but manually.
 
 #. Ensure you have the `TengwarScript`_ package installed.
    For example, run ``kpsewhich tengwarscript.sty``.
@@ -54,19 +59,20 @@ Option 2: Do the same steps in the install script, but manually.
 
     \pdfmapfile{=tengwarscript.map}
 
-   Some tutorials reccomend running ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
-#. Make the directory ``~/texmf/fonts/truetype/``. This is in your local ``texmf`` directory, so you don't need administrator privileges.
+   Some tutorials recommend running ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
+#. Make the directory ``~/texmf/fonts/truetype/``. This is in your local ``texmf`` `directory`_, so you don't need administrator privileges.
 #. Download the Tengwar fonts you want and unzip them there.
 
 .. _install script: ./install-tengwar-scripts.sh
 .. _add this line to every Tex file: http://tex.stackexchange.com/questions/56487/tengwar-script-in-tex-live
 .. _texlive-fonts-extra: https://packages.debian.org/search?searchon=names&keywords=texlive-fonts-extra
+.. _directory: https://vajrabhrt.wordpress.com/2009/04/01/your-home-texmf-tree/
 
 --------------
 Testing it out
 --------------
 
-After performing option 1 or 2, run this example script in your favorite LaTeX editor::
+After performing option 1 or 2, compile this document in your favorite LaTeX editor::
 
     \documentclass{minimal}
     \usepackage[all]{tengwarscript}
@@ -79,7 +85,11 @@ This will use the default Parmaite font to write the Tengwar word *quetta*, mean
 
 Once you have a working installation, you can try more `interesting examples`_.
 
+For convenient Roman to Tengwar transcription, you will probably want to use a conversion script,
+such as the `Perl tengwar transcriber`_.
+
 .. _interesting examples: http://tex.stackexchange.com/questions/13015/what-package-allows-elvish-in-tex
+.. _Perl tengwar transcriber: djelibeibi.unex.es/tengwar/
 
 ---------------
 Troubleshooting
