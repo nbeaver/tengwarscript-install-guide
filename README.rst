@@ -15,7 +15,7 @@ The fonts are not included in the TengwarScript package,
 presumably since the legal status of the fonts is not clear.
 
 TengwarScript does not use Tengwar characters directly,
-since Tengwar is `still being standardized` into Unicode.
+since Tengwar is `still being standardized`_ into Unicode.
 
 There are other methods for writing Tengwar, including XeTeX, but they will not be used in this guide.
 This will focus on producing PDFs. Look elsewhere for writing with Tengwar `on the web`.
@@ -31,6 +31,10 @@ but it should be applicable to most LaTeX installs.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Quickstart guide to using Tengwar fonts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+------------
+Installation
+------------
 
 Option 1: Move to a temporary folder like ``~/Downloads`` and run the `install script`_.
 
@@ -57,7 +61,11 @@ Option 2: Do the same steps in the install script, but manually.
 .. _add this line to every Tex file: http://tex.stackexchange.com/questions/56487/tengwar-script-in-tex-live
 .. _texlive-fonts-extra: https://packages.debian.org/search?searchon=names&keywords=texlive-fonts-extra
 
-After performing option 1 or 2, run this example script::
+--------------
+Testing it out
+--------------
+
+After performing option 1 or 2, run this example script in your favorite LaTeX editor::
 
     \documentclass{minimal}
     \usepackage[all]{tengwarscript}
@@ -65,7 +73,17 @@ After performing option 1 or 2, run this example script::
     \Tquesse\TTacute\Ttinco\TTdoubler\TTthreedots
     \end{document}
 
-This will use the default Parmaite font.
+This will use the default Parmaite font to write the Tengwar word *quetta*, meaning *word*.
+(This is an example from the tengwarscript documentation.)
+
+Once you have a working installation, you can try more `interesting examples`.
+
+.. _interesting examples: http://tex.stackexchange.com/questions/13015/what-package-allows-elvish-in-tex
+
+---------------
+Troubleshooting
+---------------
+
 If you get errors such as
 ``!pdfTeX error: pdflatex (file Parmaite.ttf): cannot open TrueType font file for reading``
 try changing the font::
@@ -86,13 +104,11 @@ or try explicitly adding the map file::
     \end{document}
 
 Make sure the names of the fonts match the names in `tengwarscript.map`_.
-You will probably have to do a lot of renaming of the ``.ttf`` files.
+You will need to do a lot of renaming of the ``.ttf`` files if you take the manual route.
 
-Once you have a working installation, you can try more `interesting examples`.
 Note: the ``tengtest.tex`` file in the documentation requires ``texlive-lang-spanish``.
 
 .. _tengwarscript.map: /usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map
-.. _interesting examples: http://tex.stackexchange.com/questions/13015/what-package-allows-elvish-in-tex
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Provenance status of Tengwar fonts for LaTeX
@@ -121,7 +137,6 @@ Unicode Tengwar Parmaite
 ------------------------
 
 Deprecated in Tengwarscript 1.3, but still available and on the Internet Archive.
-The installer script skips this one.
 
 http://www.uv.es/~conrad/tolkien.html
 
@@ -172,6 +187,7 @@ http://web.archive.org/web/20120716182423/http://tengwarformal.limes.com.pl/font
 ---------------
 Tengwar Annatar
 ---------------
+
 Website returns 200 OK, but has been taken down since 2013-08-30.
 No backup on Internet Archive.
 
@@ -179,7 +195,11 @@ http://home.student.uu.se/?languageId=1j/jowi4905/fonts/annatar.html
 
 http://web.archive.org/web/20130917205707/http://home.student.uu.se/?languageId=1j/jowi4905/fonts/annatar.html
 
-Fortunately, third parties have preserved the fonts.
+This site seems to be the new home of the font.
+
+http://web.comhem.se/alatius/fonts/annatar.html
+
+Third parties also have preserved the fonts.
 
 http://www.dafont.com/tengwar-annatar.font
 

@@ -1,11 +1,20 @@
 #!/usr/bin/env bash
 
+# Check the tengwarscript package is installed.
+kpsewhich tengwarscript.sty
+ERROR_CODE=$?
+if [ $ERROR_CODE -ne 0 ]; then
+    echo "Error: tengwarscript is not installed."
+    exit $ERROR_CODE
+fi
+
 # Enable the font maps in the tengwarscript package.
 updmap --enable Map=tengwarscript.map
 
 # Choose the directory to put the fonts in.
 # This could also be just ~/texmf/fonts/truetype.
-# The additional directory is a little neater, though.
+# The additional directory is a little neater, though,
+# and matches the documentation.
 FONT_DIR=~/texmf/fonts/truetype/tengwarscript
 mkdir -p $FONT_DIR
 cd $FONT_DIR
@@ -23,10 +32,7 @@ mkdir elfica
 wget 'http://www.oocities.org/enrombell/files/Pack_en.zip'
 unzip Pack_en.zip -d $FONT_DIR/elfica
 cd elfica
-mv QUENYA.TTF TengwarQuenya.ttf
-mv QUENYAA.TTF TengwarQuenyaAlt.ttf
-mv QUENCAP1.TTF TengwarQuenyaCapitals1.ttf
-mv QUENCAP2.TTF TengwarQuenyaCapitals2.ttf
+mv Elfica200841se07.ttf Elfica32.ttf
 cd -
 
 mkdir gothika
@@ -45,7 +51,7 @@ mv TengwarFormalA12b.ttf TengwarFormalA12.ttf
 cd -
 
 mkdir annatar
-wget -O annatar.zip 'http://img.dafont.com/dl/?f=tengwar_annatar'
+wget -O annatar.zip 'http://web.comhem.se/alatius/fonts/tngan120.zip'
 unzip annatar.zip -d $FONT_DIR/annatar
 #TODO: check that these all really match
 
@@ -86,4 +92,14 @@ cd teleri
 mv 'Tengwar Telerin.ttf' TengwarTelerin.ttf
 cd -
 
+mkdir -p ~/texmf/fonts/type1/tengwarscript/
+cd ~/texmf/fonts/type1/tengwarscript/
+mkdir unicodeparmaite
+wget 'http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
+tar zxf UnicodeTengwarParmaite.tar.gz -C unicodeparmaite
+cd unicodeparmaite
+mv parmaite.pfb UnicodeParmaite.pfb
+cd -
+
 # DONE: update names to match /usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map
+# DONE: install unicodeparmaite as well
