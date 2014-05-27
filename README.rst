@@ -17,7 +17,7 @@ presumably since the legal status of the fonts is not clear.
 TengwarScript does not use Tengwar characters directly,
 since Tengwar is `still being standardized`_ into Unicode.
 
-There are other methods for writing Tengwar, including XeTeX, but they will not be used in this guide.
+There are `other methods`_ for writing Tengwar, including XeTeX, but they will not be used in this guide.
 This will focus on producing PDFs. Look elsewhere for writing with Tengwar `on the web`.
 
 This guide was tested on Debian unstable with TeX Live 2013,
@@ -26,6 +26,7 @@ but it should be applicable to most LaTeX installs.
 .. _including English: http://3rin.gs/tengwar
 .. _TengwarScript: http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
 .. _still being standardized: http://www.evertype.com/standards/csur/tengwar.html
+.. _other methods: http://tex.stackexchange.com/a/57457
 .. _on the web: http://freetengwar.sourceforge.net/embedding.html
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,7 +37,7 @@ Quickstart guide to using Tengwar fonts
 Installation
 ------------
 
-Option 1: Move to a temporary folder like ``~/Downloads`` and run the `install script`_.
+Option 1: Run the `install script`_.
 
 Option 2: Do the same steps in the install script, but manually.
 
@@ -53,7 +54,7 @@ Option 2: Do the same steps in the install script, but manually.
 
     \pdfmapfile{=tengwarscript.map}
 
-   Some tutorials have stated you must run ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
+   Some tutorials reccomend running ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
 #. Make the directory ``~/texmf/fonts/truetype/``. This is in your local ``texmf`` directory, so you don't need administrator privileges.
 #. Download the Tengwar fonts you want and unzip them there.
 
@@ -213,9 +214,10 @@ Original website gone (301 Moved Permanently).
 http://www.geocities.com/fontwizard/font%20tengwar/index.html
 
 The site it has been moved to has the fonts removed:
-> This Content has been removed at the request of the Tolkien Estate.
->
-> Daniel Steven Smith
+
+    This Content has been removed at the request of the Tolkien Estate.
+   
+    Daniel Steven Smith
 
 http://www.acondia.com/fonts/tengwar/index.html
 
