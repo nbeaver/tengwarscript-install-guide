@@ -54,6 +54,7 @@ Option 2: Do the same steps as the install script, but manually.
     /usr/share/texlive/texmf-dist/tex/latex/tengwarscript/tengwarscript.sty
    
    then you are fine. If you get a blank, then you need to install it.
+   It is on `CTAN`_ and also on most Linux distribution's packages.
    On Debian, it is in `texlive-fonts-extra`_.
 #. Run ``updmap --enable Map=tengwarscript.map``. If you do not run this command, you must `add this line to every Tex file`_ that uses Tengwar fonts::
 
@@ -65,6 +66,7 @@ Option 2: Do the same steps as the install script, but manually.
 
 .. _install script: ./install-tengwar-scripts.sh
 .. _add this line to every Tex file: http://tex.stackexchange.com/questions/56487/tengwar-script-in-tex-live
+.. _CTAN: http://www.ctan.org/pkg/tengwarscript
 .. _texlive-fonts-extra: https://packages.debian.org/search?searchon=names&keywords=texlive-fonts-extra
 .. _directory: https://vajrabhrt.wordpress.com/2009/04/01/your-home-texmf-tree/
 
