@@ -56,7 +56,6 @@ cd -
 mkdir --parents annatar
 wget --no-verbose --continue -O annatar.zip 'http://web.comhem.se/alatius/fonts/tngan120.zip'
 unzip -u annatar.zip -d $FONT_DIR/annatar
-#TODO: check that these all really match
 
 mkdir --parents quenya
 wget --no-verbose --continue -O quenya.zip 'http://img.dafont.com/dl/?f=tengwar_quenya'

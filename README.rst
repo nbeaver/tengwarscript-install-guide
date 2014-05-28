@@ -10,13 +10,13 @@ The Tengwar comprise an alphabet invented by J.R.R. Tolkien for writing Quenya o
 It can be used for other languages, too, `including English`_.
 
 This is a guide for getting started producing Tengwar with the LaTeX typesetting system.
-It will use the `TengwarScript`_ package
+It will use the `TengwarScript`_ package.
 TengwarScript does not use Tengwar characters directly,
 since Tengwar is `still being standardized`_ into Unicode.
 Instead, it uses custom fonts.
 The fonts are not included in the TengwarScript package,
 presumably since the legal status of the fonts is not clear.
-The guide includes a companion script to automate the downloading, installing, and configuring of the fonts,
+The guide includes a `companion script`_ to automate the downloading, installing, and configuring of the fonts,
 most of which are TrueType fonts.
 
 There `are`_ `other`_ `methods`_ for writing Tengwar with TeX, `including XeTeX`, but they will not be used in this guide.
@@ -28,6 +28,7 @@ but it should be applicable to most LaTeX installs.
 .. _including English: http://3rin.gs/tengwar
 .. _TengwarScript: http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
 .. _still being standardized: http://www.evertype.com/standards/csur/tengwar.html
+.. _companion script: ./install-tengwar-scripts.sh
 .. _are: http://www.ctan.org/pkg/tolkienfonts
 .. _other: http://www.ctan.org/pkg/elvish
 .. _methods: http://www.ctan.org/pkg/tengtex
@@ -43,6 +44,7 @@ Installation
 ------------
 
 Option 1: Run the `install script`_.
+It is a bash script and requires that ``wget`` and ``unzip`` are installed.
 
 If you are doing this for the first time,
 the script will download all the fonts in your ``~/texmf`` directory.
