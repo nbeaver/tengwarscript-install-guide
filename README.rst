@@ -44,6 +44,11 @@ Installation
 
 Option 1: Run the `install script`_.
 
+If you are doing this for the first time,
+the script will download all the fonts in your ``~/texmf`` directory.
+If you have downloaded these fonts before and the directory names are the same,
+existing files that are older than the new files will be overwritten.
+
 Option 2: Do the same steps as the install script, but manually.
 
 #. Ensure you have the `TengwarScript`_ package installed.

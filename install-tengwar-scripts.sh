@@ -99,7 +99,7 @@ mkdir --parents ~/texmf/fonts/type1/tengwarscript/
 cd ~/texmf/fonts/type1/tengwarscript/
 mkdir --parents unicodeparmaite
 wget --no-verbose --continue 'http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
-tar --ungzip --extract --overwrite --file UnicodeTengwarParmaite.tar.gz --directory unicodeparmaite
+tar --ungzip --extract --overwrite  --keep-newer-files --file UnicodeTengwarParmaite.tar.gz --directory unicodeparmaite
 cd unicodeparmaite
 mv --verbose parmaite.pfb UnicodeParmaite.pfb
 cd -
