@@ -69,6 +69,10 @@ Option 2: Do the same steps as the install script, but manually.
 
    Some tutorials recommend running ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
 #. Make the directory ``~/texmf/fonts/truetype/``. This is in your local ``texmf`` `directory`_, so you don't need administrator privileges.
+   If you're not sure where ``texmf`` is, run this command::
+
+       kpsewhich -var-value TEXMFHOME
+
 #. Download the Tengwar fonts you want and unzip them there.
 
 .. _install script: ./install-tengwar-scripts.sh
