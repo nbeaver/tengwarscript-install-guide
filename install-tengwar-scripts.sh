@@ -61,33 +61,18 @@ wget --no-verbose --continue -O annatar.zip 'http://web.comhem.se/alatius/fonts/
 unzip -u annatar.zip -d $FONT_DIR/annatar
 
 mkdir --parents quenya
-wget --no-verbose --continue -O quenya.zip 'http://img.dafont.com/dl/?f=tengwar_quenya'
+wget --no-verbose --continue -O quenya.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarQuenya_v19E.zip'
 unzip -u quenya.zip -d $FONT_DIR/quenya
-cd quenya
-mv --verbose QUENYA.TTF TengwarQuenya.ttf
-mv --verbose QUENYAA.TTF TengwarQuenyaAlt.ttf
-mv --verbose QUENCAP1.TTF TengwarQuenyaCapitals1.ttf
-mv --verbose QUENCAP2.TTF TengwarQuenyaCapitals2.ttf
 cd $FONT_DIR
 
 mkdir --parents sindarin
-wget --no-verbose --continue -O sindarin.zip 'http://img.dafont.com/dl/?f=tengwar_sindarin'
+wget --no-verbose --continue -O sindarin.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarSindarin_v19E.zip'
 unzip -u sindarin.zip -d $FONT_DIR/sindarin
-cd sindarin
-mv --verbose SINDAR.TTF TengwarSindarin.ttf
-mv --verbose SINDARA.TTF TengwarSindarinAlt.ttf
-mv --verbose SINDCAP1.TTF TengwarSindarinCapitals1.ttf
-mv --verbose SINDCAP2.TTF TengwarSindarinCapitals2.ttf
 cd $FONT_DIR
 
 mkdir --parents noldor
-wget --no-verbose --continue -O noldor.zip 'http://img.dafont.com/dl/?f=tengwar_noldor'
+wget --no-verbose --continue -O noldor.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarNoldor_v19E.zip'
 unzip -u noldor.zip -d $FONT_DIR/noldor
-cd noldor
-mv --verbose NOLDOR.TTF TengwarNoldor.ttf
-mv --verbose NOLDORA.TTF TengwarNoldorAlt.ttf
-mv --verbose NOLDCAP1.TTF TengwarNoldorCapitals1.ttf
-mv --verbose NOLDCAP2.TTF TengwarNoldorCapitals2.ttf
 cd $FONT_DIR
 
 mkdir --parents teleri

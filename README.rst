@@ -19,7 +19,7 @@ presumably since the legal status of the fonts is not clear.
 The guide includes a `companion script`_ to automate the downloading, installing, and configuring of the fonts,
 most of which are TrueType fonts.
 
-There `are`_ `other`_ `methods`_ for writing Tengwar with TeX, `including XeTeX`, but they will not be used in this guide.
+There `are`_ `other`_ `methods`_ for writing Tengwar with TeX, `including XeTeX`_, but they will not be used in this guide.
 This will focus on producing PDFs. Look elsewhere for writing with Tengwar `on the web`_.
 
 This guide was tested on Debian unstable with TeX Live 2013,
@@ -250,25 +250,9 @@ The site it has been moved to has the fonts removed:
 
 http://www.acondia.com/fonts/tengwar/index.html
 
-Neither of them has an Internet Archive backup.
- 
-https://web.archive.org/web/http://www.acondia.com/fonts/tengwar/index
+Fortunately, there is an Internet Archive backup (thanks to the ``tengwarscript`` package maintainer, Ignacio Fernández Galván, for the link).
 
-https://web.archive.org/web/http://www.geocities.com/fontwizard/font%20tengwar/index.html
-
-Fortunately, third parties have preserved the fonts.
-
-http://www.dafont.com/tengwar-quenya.font
-
-http://img.dafont.com/dl/?f=tengwar_quenya
-
-http://www.dafont.com/tengwar-sindarin.font
-
-http://img.dafont.com/dl/?f=tengwar_sindarin
-
-http://www.dafont.com/tengwar-noldor.font
-
-http://img.dafont.com/dl/?f=tengwar_noldor
+http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/index.html
 
 --------------
 Tengwar Teleri
