@@ -1,6 +1,13 @@
+.. -*- coding: utf-8 -*-
+
 ===========================================================
 Writing with Tolkien's Elvish alphabet (Tengwar) and LaTeX
 ===========================================================
+
+:Author: Nathaniel Beaver
+:Copyright: Creative Commons Attribution-ShareAlike 4.0 International License
+
+.. contents::
 
 ~~~~~~~~~~~~~~~
 What's Tengwar?
@@ -43,15 +50,20 @@ Quickstart guide to using Tengwar fonts
 Installation
 ------------
 
+++++++++++++++++++++++++++++++++++++
 Option 1: Run the `install script`_.
+++++++++++++++++++++++++++++++++++++
+
 It is a bash script and requires that ``wget`` and ``unzip`` are installed.
 
 If you are doing this for the first time,
-the script will download all the fonts in your ``~/texmf`` directory.
+the script will download all the fonts into your ``~/texmf`` directory.
 If you have downloaded these fonts before and the directory names are the same,
 existing files that are older than the new files will be overwritten.
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Option 2: Do the same steps as the install script, but manually.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #. Ensure you have the `TengwarScript`_ package installed.
    For example, run ``kpsewhich tengwarscript.sty``.
@@ -85,7 +97,8 @@ Option 2: Do the same steps as the install script, but manually.
 Testing it out
 --------------
 
-After performing option 1 or 2, compile this document in your favorite LaTeX editor::
+After performing option 1 or 2,
+compile this document in your favorite LaTeX editor::
 
     \documentclass{minimal}
     \usepackage[all]{tengwarscript}
@@ -96,9 +109,11 @@ After performing option 1 or 2, compile this document in your favorite LaTeX edi
 This will use the default Parmaite font to write the Tengwar word *quetta*, meaning *word*.
 (This is an example from the tengwarscript documentation.)
 
-Once you have a working installation, you can try more `interesting examples`_.
+Once you have a working installation,
+you can try more `interesting examples`_.
 
-For convenient Roman to Tengwar transcription, you will probably want to use a conversion script,
+For convenient Roman to Tengwar transcription,
+you will probably want to use a conversion script,
 such as the `Perl tengwar transcriber`_.
 
 .. _interesting examples: http://tex.stackexchange.com/questions/13015/what-package-allows-elvish-in-tex
@@ -128,7 +143,7 @@ or try explicitly adding the map file::
     \end{document}
 
 Make sure the names of the fonts match the names in `tengwarscript.map`_.
-You will need to do a lot of renaming of the ``.ttf`` files if you take the manual route (Option 2).
+jou will need to do a lot of renaming of the ``.ttf`` files if you take the manual route (Option 2).
 
 Note: the ``tengtest.tex`` file in the documentation requires ``texlive-lang-spanish``.
 
@@ -160,7 +175,8 @@ http://web.archive.org/web/20130217221321/http://at.mansbjorkman.net/Downloads/P
 Unicode Tengwar Parmaite
 ------------------------
 
-Deprecated in Tengwarscript 1.3, but still available and on the Internet Archive.
+Deprecated in Tengwarscript 1.3,
+but still available and on the Internet Archive.
 
 http://www.uv.es/~conrad/tolkien.html
 
@@ -182,7 +198,8 @@ http://web.archive.org/web/20091028081407/http://geocities.com/enrombell/files/P
 
 http://web.archive.org/web/20091028081410/http://geocities.com/enrombell/files/Gothika_en.zip
 
-Fortunately, third parties have preserved Geocities, although they don't allow crawling so the Internet Archive won't preserve them.
+Fortunately, third parties have preserved Geocities,
+although they don't allow crawling so the Internet Archive won't preserve them.
 
 http://www.oocities.org/enrombell/eng_dir/Index.htm
 
@@ -250,7 +267,8 @@ The site it has been moved to has the fonts removed:
 
 http://www.acondia.com/fonts/tengwar/index.html
 
-Fortunately, there is an Internet Archive backup (thanks to the ``tengwarscript`` package maintainer, Ignacio Fernández Galván, for the link).
+Fortunately, there is an Internet Archive backup
+(thanks to the ``tengwarscript`` package maintainer, Ignacio Fernández Galván, for the link).
 
 http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/index.html
 
@@ -264,7 +282,8 @@ http://www.dafont.com/font.php?file=tengwar_teleri
 
 http://img.dafont.com/dl/?f=tengwar_teleri
 
-The page is on the Internet Archive, but not the font files due to DaFont's `robots.txt <http://img.dafont.com/robots.txt>`_.
+The page is on the Internet Archive,
+but not the font files due to DaFont's `robots.txt <http://img.dafont.com/robots.txt>`_.
 
 http://web.archive.org/web/20120222184558/http://www.dafont.com/font.php?file=tengwar_teleri
 
