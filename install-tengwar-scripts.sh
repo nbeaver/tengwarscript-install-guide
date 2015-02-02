@@ -11,6 +11,11 @@ fi
 # Terminate as soon as any command fails
 set -e
 
+# In case CDPATH is set,
+# unset it so we can reliably cd to relative paths.
+unset CDPATH
+# https://bosker.wordpress.com/2012/02/12/bash-scripters-beware-of-the-cdpath/
+
 # Enable the font maps in the tengwarscript package.
 updmap --enable Map=tengwarscript.map
 
