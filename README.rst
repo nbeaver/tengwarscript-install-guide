@@ -143,7 +143,7 @@ or try explicitly adding the map file::
     \end{document}
 
 Make sure the names of the fonts match the names in `tengwarscript.map`_.
-jou will need to do a lot of renaming of the ``.ttf`` files if you take the manual route (Option 2).
+You will need to do a lot of renaming of the ``.ttf`` files if you take the manual route (Option 2).
 
 Note: the ``tengtest.tex`` file in the documentation requires ``texlive-lang-spanish``.
 
@@ -153,10 +153,8 @@ Note: the ``tengtest.tex`` file in the documentation requires ``texlive-lang-spa
 Provenance status of Tengwar fonts for LaTeX
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The LaTeX package TengwarScript 1.3 lists several fonts for writing in Tengwar with LaTeX.
-However, the package has not been updated since 2007,
-and many of the fonts have become hard to find.
-Some of the websites in the documentation have been moved or taken down.
+The TengwarScript package was updated to v1.3.1 in 2014,
+and it now points to archived URL for the fonts since many of the original websites have been taken down.
 However, all of the founts can be found with some searching.
 
 ------------------
