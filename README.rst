@@ -142,12 +142,12 @@ or try explicitly adding the map file::
     \Tquesse\TTacute\Ttinco\TTdoubler\TTthreedots
     \end{document}
 
-Make sure the names of the fonts match the names in `tengwarscript.map`_.
+Make sure the names of the fonts match the names in ``tengwarscript.map``.
+On Debian, this file is at `</usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map>`_.
+
 You will need to do a lot of renaming of the ``.ttf`` files if you take the manual route (Option 2).
 
-Note: the ``tengtest.tex`` file in the documentation requires ``texlive-lang-spanish``.
-
-.. _tengwarscript.map: /usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map
+Note: the ``tengtest.tex`` file in the documentation requires the ``texlive-lang-spanish`` Debian package.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Provenance status of Tengwar fonts for LaTeX
