@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Author: Nathaniel Morck Beaver (nathanielmbeaver@gmail.com)
+# Date modified: June 2015.
+# License: MIT
 
 # Check the tengwarscript package is installed.
 kpsewhich tengwarscript.sty
