@@ -24,76 +24,76 @@ updmap --enable Map=tengwarscript.map
 # The additional directory is a little neater, though,
 # and matches the documentation.
 FONT_DIR=~/texmf/fonts/truetype/tengwarscript
-mkdir --parents $FONT_DIR
+mkdir -p $FONT_DIR
 cd $FONT_DIR
 
 # Note: the following way of entering and exiting directories avoids having to prefix every file with $FONT_DIR,
 # but also makes it susceptible to forgetting the current directory and end up putting things in the wrong place.
 # I've decided that it's easier to explicitly enter and exit directories than to put $FONT_DIR in front of everything,
 # and then potentially forget that when editing later.
-mkdir --parents parmaite
+mkdir -p parmaite
 wget --no-verbose --continue 'http://at.mansbjorkman.net/Downloads/Parmaite2.zip'
 unzip -u Parmaite2.zip -d $FONT_DIR/parmaite
 cd parmaite
-mv --verbose Parmaite.TTF Parmaite.ttf
-mv --verbose Parmaite_alt.TTF Parmaite_alt.ttf
+mv -v Parmaite.TTF Parmaite.ttf
+mv -v Parmaite_alt.TTF Parmaite_alt.ttf
 cd $FONT_DIR
 
-mkdir --parents elfica
+mkdir -p elfica
 wget --no-verbose --continue 'http://www.oocities.org/enrombell/files/Pack_en.zip'
 unzip -u Pack_en.zip -d $FONT_DIR/elfica
 cd elfica
-mv --verbose Elfica200841se07.ttf Elfica32.ttf
+mv -v Elfica200841se07.ttf Elfica32.ttf
 cd $FONT_DIR
 
-mkdir --parents gothika
+mkdir -p gothika
 wget --no-verbose --continue 'http://www.oocities.org/enrombell/files/Gothika_en.zip'
 unzip -u Gothika_en.zip -d $FONT_DIR/gothika
 cd gothika
-mv --verbose Gothika2008-se001.ttf TengwarGothika050.ttf
+mv -v Gothika2008-se001.ttf TengwarGothika050.ttf
 cd $FONT_DIR
 
-mkdir --parents formal
+mkdir -p formal
 wget --no-verbose --continue 'http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip'
 unzip -u TengwarFormal-12c-ttf-pc.zip -d $FONT_DIR/formal
 cd formal/TengwarFormal-12c-ttf-pc/fonts
-mv --verbose TengwarFormal12b.ttf TengwarFormal12.ttf
-mv --verbose TengwarFormalA12b.ttf TengwarFormalA12.ttf
+mv -v TengwarFormal12b.ttf TengwarFormal12.ttf
+mv -v TengwarFormalA12b.ttf TengwarFormalA12.ttf
 cd $FONT_DIR
 
-mkdir --parents annatar
+mkdir -p annatar
 wget --no-verbose --continue -O annatar.zip 'http://web.comhem.se/alatius/fonts/tngan120.zip'
 unzip -u annatar.zip -d $FONT_DIR/annatar
 
-mkdir --parents quenya
+mkdir -p quenya
 wget --no-verbose --continue -O quenya.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarQuenya_v19E.zip'
 unzip -u quenya.zip -d $FONT_DIR/quenya
 cd $FONT_DIR
 
-mkdir --parents sindarin
+mkdir -p sindarin
 wget --no-verbose --continue -O sindarin.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarSindarin_v19E.zip'
 unzip -u sindarin.zip -d $FONT_DIR/sindarin
 cd $FONT_DIR
 
-mkdir --parents noldor
+mkdir -p noldor
 wget --no-verbose --continue -O noldor.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarNoldor_v19E.zip'
 unzip -u noldor.zip -d $FONT_DIR/noldor
 cd $FONT_DIR
 
-mkdir --parents teleri
+mkdir -p teleri
 wget --no-verbose --continue -O teleri.zip 'http://img.dafont.com/dl/?f=tengwar_teleri'
 unzip -u teleri.zip -d $FONT_DIR/teleri
 cd teleri
-mv --verbose 'Tengwar Telerin.ttf' TengwarTelerin.ttf
+mv -v 'Tengwar Telerin.ttf' TengwarTelerin.ttf
 cd $FONT_DIR
 
-mkdir --parents ~/texmf/fonts/type1/tengwarscript/
+mkdir -p ~/texmf/fonts/type1/tengwarscript/
 cd ~/texmf/fonts/type1/tengwarscript/
-mkdir --parents unicodeparmaite
+mkdir -p unicodeparmaite
 wget --no-verbose --continue 'http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
-tar --ungzip --extract --overwrite  --keep-newer-files --file UnicodeTengwarParmaite.tar.gz --directory unicodeparmaite
+tar -zxT UnicodeTengwarParmaite.tar.gz -C unicodeparmaite
 cd unicodeparmaite
-mv --verbose parmaite.pfb UnicodeParmaite.pfb
+mv -v parmaite.pfb UnicodeParmaite.pfb
 cd ~/texmf/fonts/type1/tengwarscript/
 
 # DONE: update names to match /usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map
