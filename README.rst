@@ -57,7 +57,7 @@ Option 1: Run the `install script`_.
 It is a bash script and requires that ``wget`` and ``unzip`` are installed.
 
 If you are doing this for the first time,
-the script will download all the fonts into your ``~/texmf`` directory.
+the script will download all the fonts into your ``~/texmf/`` directory.
 If you have downloaded these fonts before and the directory names are the same,
 existing files that are older than the new files will be overwritten.
 
@@ -117,7 +117,7 @@ you will probably want to use a conversion script,
 such as the `Perl tengwar transcriber`_.
 
 .. _interesting examples: http://tex.stackexchange.com/questions/13015/what-package-allows-elvish-in-tex
-.. _Perl tengwar transcriber: djelibeibi.unex.es/tengwar/
+.. _Perl tengwar transcriber: http://djelibeibi.unex.es/tengwar/#transcription
 
 ---------------
 Troubleshooting
