@@ -291,7 +291,7 @@ Legal information
 
 This guide is released under a `Creative Commons Attribution-ShareAlike 4.0 International License`_.
 
-The associated installation script is released under the `LaTeX Project Public License`_.
+The associated installation script is released under the `MIT License`_.
 
 .. _Creative Commons Attribution-ShareAlike 4.0 International License: http://creativecommons.org/licenses/by-sa/4.0/
-.. _LaTeX Project Public License: http://latex-project.org/lppl/
+.. _MIT License: http://opensource.org/licenses/MIT
