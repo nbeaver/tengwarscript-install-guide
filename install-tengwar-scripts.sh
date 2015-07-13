@@ -4,9 +4,14 @@
 # License: MIT
 
 # Check the tengwarscript package is installed.
-kpsewhich tengwarscript.sty
-ERROR_CODE=$?
-if [ $ERROR_CODE -ne 0 ]; then
+if kpsewhich tengwarscript.sty
+then
+    # Set the directory to put the fonts in.
+    # This could also be just $TEXMFHOME/fonts/truetype.
+    # The additional 'tengwarscript' directory is a little neater, though,
+    # and matches the documentation.
+    FONT_DIR="$(kpsewhich -var-value=TEXMFHOME)/fonts/truetype/tengwarscript"
+else
     echo "Error: tengwarscript is not installed."
     exit $ERROR_CODE
 fi
@@ -22,11 +27,6 @@ unset CDPATH
 # Enable the font maps in the tengwarscript package.
 updmap --enable Map=tengwarscript.map
 
-# Choose the directory to put the fonts in.
-# This could also be just ~/texmf/fonts/truetype.
-# The additional directory is a little neater, though,
-# and matches the documentation.
-FONT_DIR=~/texmf/fonts/truetype/tengwarscript
 mkdir -p $FONT_DIR
 cd $FONT_DIR
 
