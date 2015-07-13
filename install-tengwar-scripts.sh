@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Author: Nathaniel Morck Beaver (nathanielmbeaver@gmail.com)
-# Date modified: June 2015.
 # License: MIT
 
 # Check the tengwarscript package is installed.
@@ -30,10 +29,13 @@ updmap --enable Map=tengwarscript.map
 mkdir -p $FONT_DIR
 cd $FONT_DIR
 
-# Note: the following way of entering and exiting directories avoids having to prefix every file with $FONT_DIR,
-# but also makes it susceptible to forgetting the current directory and end up putting things in the wrong place.
-# I've decided that it's easier to explicitly enter and exit directories than to put $FONT_DIR in front of everything,
-# and then potentially forget that when editing later.
+# Warning: the following way of entering and exiting directories avoids having to
+# prefix every file with $FONT_DIR, but also makes it susceptible to forgetting
+# the current directory and end up putting things in the wrong place. I've
+# decided that it's easier to explicitly enter and exit directories than to put
+# $FONT_DIR in front of everything, and then potentially forget that when editing
+# later.
+
 mkdir -p parmaite
 curl --remote-name 'http://at.mansbjorkman.net/Downloads/Parmaite2.zip'
 unzip -u Parmaite2.zip -d $FONT_DIR/parmaite
