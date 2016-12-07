@@ -12,7 +12,7 @@ then
     FONT_DIR="$(kpsewhich -var-value=TEXMFHOME)/fonts/truetype/tengwarscript"
 else
     echo "Error: tengwarscript is not installed."
-    exit $ERROR_CODE
+    exit "$ERROR_CODE"
 fi
 
 # Terminate as soon as any command fails
@@ -26,8 +26,8 @@ unset CDPATH
 # Enable the font maps in the tengwarscript package.
 updmap --enable Map=tengwarscript.map
 
-mkdir -p $FONT_DIR
-cd $FONT_DIR
+mkdir -p "$FONT_DIR"
+cd "$FONT_DIR"
 
 # Warning: the following way of entering and exiting directories avoids having to
 # prefix every file with $FONT_DIR, but also makes it susceptible to forgetting
@@ -38,66 +38,66 @@ cd $FONT_DIR
 
 mkdir -p parmaite
 curl --remote-name 'http://at.mansbjorkman.net/Downloads/Parmaite2.zip'
-unzip -u Parmaite2.zip -d $FONT_DIR/parmaite
+unzip -u Parmaite2.zip -d "$FONT_DIR/parmaite"
 cd parmaite
 mv -v Parmaite.TTF Parmaite.ttf
 mv -v Parmaite_alt.TTF Parmaite_alt.ttf
-cd $FONT_DIR
+cd "$FONT_DIR"
 
 mkdir -p elfica
 curl --remote-name 'http://www.oocities.org/enrombell/files/Pack_en.zip'
-unzip -u Pack_en.zip -d $FONT_DIR/elfica
+unzip -u Pack_en.zip -d "$FONT_DIR/elfica"
 cd elfica
 mv -v Elfica200841se07.ttf Elfica32.ttf
-cd $FONT_DIR
+cd "$FONT_DIR"
 
 mkdir -p gothika
 curl --remote-name 'http://www.oocities.org/enrombell/files/Gothika_en.zip'
-unzip -u Gothika_en.zip -d $FONT_DIR/gothika
+unzip -u Gothika_en.zip -d "$FONT_DIR/gothika"
 cd gothika
 mv -v Gothika2008-se001.ttf TengwarGothika050.ttf
-cd $FONT_DIR
+cd "$FONT_DIR"
 
 mkdir -p formal
 curl --remote-name 'http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip'
-unzip -u TengwarFormal-12c-ttf-pc.zip -d $FONT_DIR/formal
-cd formal/TengwarFormal-12c-ttf-pc/fonts
+unzip -u TengwarFormal-12c-ttf-pc.zip -d "$FONT_DIR/formal"
+cd "formal/TengwarFormal-12c-ttf-pc/fonts"
 mv -v TengwarFormal12b.ttf TengwarFormal12.ttf
 mv -v TengwarFormalA12b.ttf TengwarFormalA12.ttf
-cd $FONT_DIR
+cd "$FONT_DIR"
 
-mkdir -p annatar
+mkdir -p "annatar"
 curl --location --output annatar.zip 'http://web.comhem.se/alatius/fonts/tngan120.zip'
-unzip -u annatar.zip -d $FONT_DIR/annatar
+unzip -u annatar.zip -d "$FONT_DIR/annatar"
 
-mkdir -p quenya
+mkdir -p "quenya"
 curl --location --output quenya.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarQuenya_v19E.zip'
-unzip -u quenya.zip -d $FONT_DIR/quenya
-cd $FONT_DIR
+unzip -u quenya.zip -d "$FONT_DIR/quenya"
+cd "$FONT_DIR"
 
-mkdir -p sindarin
+mkdir -p "sindarin"
 curl --location --output sindarin.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarSindarin_v19E.zip'
-unzip -u sindarin.zip -d $FONT_DIR/sindarin
-cd $FONT_DIR
+unzip -u sindarin.zip -d "$FONT_DIR/sindarin"
+cd "$FONT_DIR"
 
-mkdir -p noldor
+mkdir -p "noldor"
 curl --location --output noldor.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarNoldor_v19E.zip'
-unzip -u noldor.zip -d $FONT_DIR/noldor
-cd $FONT_DIR
+unzip -u noldor.zip -d "$FONT_DIR/noldor"
+cd "$FONT_DIR"
 
-mkdir -p teleri
+mkdir -p "teleri"
 curl --location --output teleri.zip 'http://img.dafont.com/dl/?f=tengwar_teleri'
-unzip -u teleri.zip -d $FONT_DIR/teleri
+unzip -u teleri.zip -d "$FONT_DIR/teleri"
 cd teleri
-mv -v 'Tengwar Telerin.ttf' TengwarTelerin.ttf
-cd $FONT_DIR
+mv -v 'Tengwar Telerin.ttf' 'TengwarTelerin.ttf'
+cd "$FONT_DIR"
 
 mkdir -p ~/texmf/fonts/type1/tengwarscript/
 cd ~/texmf/fonts/type1/tengwarscript/
-mkdir -p unicodeparmaite
+mkdir -p "unicodeparmaite"
 curl --remote-name 'http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
 tar -xf UnicodeTengwarParmaite.tar.gz -C unicodeparmaite
-cd unicodeparmaite
+cd "unicodeparmaite"
 mv -v parmaite.pfb UnicodeParmaite.pfb
 cd ~/texmf/fonts/type1/tengwarscript/
 
