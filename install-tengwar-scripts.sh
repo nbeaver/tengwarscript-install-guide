@@ -103,7 +103,7 @@ cd ~/texmf/fonts/type1/tengwarscript/
 
 GREEN='\033[0;32m'
 COLOROFF='\033[0m'
-printf "\n          $GREEN*** Finished successfully. ***$COLOROFF\n"
+printf "\n          %s*** Finished successfully. ***%s\n" "$GREEN" "$COLOROFF"
 
 # DONE: update names to match /usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map
 # DONE: install unicodeparmaite as well
