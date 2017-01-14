@@ -37,6 +37,7 @@ cd "$FONT_DIR"
 # later.
 
 mkdir -p parmaite
+printf "Downloading 'parmaite' font...\n"
 curl --remote-name 'http://at.mansbjorkman.net/Downloads/Parmaite2.zip'
 unzip -u Parmaite2.zip -d "$FONT_DIR/parmaite"
 cd parmaite
@@ -45,6 +46,7 @@ mv -v Parmaite_alt.TTF Parmaite_alt.ttf
 cd "$FONT_DIR"
 
 mkdir -p elfica
+printf "Downloading 'elfica' font...\n"
 curl --remote-name 'http://www.oocities.org/enrombell/files/Pack_en.zip'
 unzip -u Pack_en.zip -d "$FONT_DIR/elfica"
 cd elfica
@@ -52,6 +54,7 @@ mv -v Elfica200841se07.ttf Elfica32.ttf
 cd "$FONT_DIR"
 
 mkdir -p gothika
+printf "Downloading 'gothika' font...\n"
 curl --remote-name 'http://www.oocities.org/enrombell/files/Gothika_en.zip'
 unzip -u Gothika_en.zip -d "$FONT_DIR/gothika"
 cd gothika
@@ -59,6 +62,7 @@ mv -v Gothika2008-se001.ttf TengwarGothika050.ttf
 cd "$FONT_DIR"
 
 mkdir -p formal
+printf "Downloading 'formal' font...\n"
 curl --remote-name 'http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip'
 unzip -u TengwarFormal-12c-ttf-pc.zip -d "$FONT_DIR/formal"
 cd "formal/TengwarFormal-12c-ttf-pc/fonts"
@@ -67,25 +71,30 @@ mv -v TengwarFormalA12b.ttf TengwarFormalA12.ttf
 cd "$FONT_DIR"
 
 mkdir -p "annatar"
-curl --location --output annatar.zip 'http://web.comhem.se/alatius/fonts/tngan120.zip'
+printf "Downloading 'annatar' font...\n"
+curl --location --output annatar.zip 'http://web.archive.org/web/20150908132446/http://web.comhem.se/alatius/fonts/tngan120.zip'
 unzip -u annatar.zip -d "$FONT_DIR/annatar"
 
 mkdir -p "quenya"
+printf "Downloading 'quenya' font...\n"
 curl --location --output quenya.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarQuenya_v19E.zip'
 unzip -u quenya.zip -d "$FONT_DIR/quenya"
 cd "$FONT_DIR"
 
 mkdir -p "sindarin"
+printf "Downloading 'sindarin' font...\n"
 curl --location --output sindarin.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarSindarin_v19E.zip'
 unzip -u sindarin.zip -d "$FONT_DIR/sindarin"
 cd "$FONT_DIR"
 
 mkdir -p "noldor"
+printf "Downloading 'noldor' font...\n"
 curl --location --output noldor.zip 'http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/TengwarNoldor_v19E.zip'
 unzip -u noldor.zip -d "$FONT_DIR/noldor"
 cd "$FONT_DIR"
 
 mkdir -p "teleri"
+printf "Downloading 'teleri' font...\n"
 curl --location --output teleri.zip 'http://img.dafont.com/dl/?f=tengwar_teleri'
 unzip -u teleri.zip -d "$FONT_DIR/teleri"
 cd teleri
@@ -95,6 +104,7 @@ cd "$FONT_DIR"
 mkdir -p ~/texmf/fonts/type1/tengwarscript/
 cd ~/texmf/fonts/type1/tengwarscript/
 mkdir -p "unicodeparmaite"
+printf "Downloading 'unicodeparmaite' font...\n"
 curl --remote-name 'http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
 tar -xf UnicodeTengwarParmaite.tar.gz -C unicodeparmaite
 cd "unicodeparmaite"
