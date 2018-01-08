@@ -13,21 +13,27 @@ Writing with Tolkien's Elvish alphabet (Tengwar) and LaTeX
 What's Tengwar?
 ~~~~~~~~~~~~~~~
 
-The Tengwar comprise an alphabet invented by J.R.R. Tolkien for writing Quenya or Sindarin (Elvish) in his writings such as Lord of the Rings.
+The Tengwar comprise an alphabet invented by J.R.R. Tolkien
+for writing Quenya or Sindarin (Elvish) in his writings
+such as Lord of the Rings.
 It can be used for other languages, too, `including English`_.
 
-This is a guide for getting started producing Tengwar with the LaTeX typesetting system.
+This is a guide for getting started producing Tengwar
+with the LaTeX typesetting system.
 It will use the `TengwarScript`_ package.
 TengwarScript does not use Tengwar characters directly,
 since Tengwar is `still being standardized`_ into Unicode.
 Instead, it uses custom fonts.
 The fonts are not included in the TengwarScript package,
 presumably since the legal status of the fonts is not clear.
-The guide includes a `companion script`_ to automate the downloading, installing, and configuring of the fonts,
+The guide includes a `companion script`_
+to automate the downloading, installing, and configuring of the fonts,
 most of which are TrueType fonts.
 
-There `are`_ `other`_ `methods`_ for writing Tengwar with TeX, `including XeTeX`_, but they will not be used in this guide.
-This will focus on producing PDFs. Look elsewhere for writing with Tengwar `on the web`_.
+There `are`_ `other`_ `methods`_ for writing Tengwar with TeX,
+`including XeTeX`_, but they will not be used in this guide.
+This will focus on producing PDFs.
+Look elsewhere for writing with Tengwar `on the web`_.
 
 This guide was tested on Debian unstable with TeX Live 2013,
 but it should be applicable to most LaTeX installs.
@@ -66,6 +72,7 @@ Option 2: Do the same steps as the install script, but manually.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #. Ensure you have the `TengwarScript`_ package installed.
+
    For example, run ``kpsewhich tengwarscript.sty``.
    If you get an output such as::
    
@@ -75,12 +82,20 @@ Option 2: Do the same steps as the install script, but manually.
    then you are fine. If you get a blank, then you need to install it.
    It is on `CTAN`_ and also on most Linux distribution's packages.
    On Debian, it is in `texlive-fonts-extra`_.
-#. Run ``updmap --enable Map=tengwarscript.map``. If you do not run this command, you must `add this line to every Tex file`_ that uses Tengwar fonts::
+
+#. Run ``updmap --enable Map=tengwarscript.map``.
+
+   If you do not run this command,
+   you must `add this line to every Tex file`_ that uses Tengwar fonts::
 
     \pdfmapfile{=tengwarscript.map}
 
    Some tutorials recommend running ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
-#. Make the directory ``~/texmf/fonts/truetype/``. This is in your local ``texmf`` `directory`_, so you don't need administrator privileges.
+
+#. Make the directory ``~/texmf/fonts/truetype/``.
+
+   This is in your local ``texmf`` `directory`_,
+   so you don't need administrator privileges.
    If you're not sure where ``texmf`` is, run this command::
 
        kpsewhich -var-value TEXMFHOME
@@ -106,7 +121,8 @@ compile this document in your favorite LaTeX editor::
     \Tquesse\TTacute\Ttinco\TTdoubler\TTthreedots
     \end{document}
 
-This will use the default Parmaite font to write the Tengwar word *quetta*, meaning *word*.
+This will use the default Parmaite font
+to write the Tengwar word *quetta*, meaning *word*.
 (This is an example from the tengwarscript documentation.)
 
 Once you have a working installation,
@@ -123,8 +139,10 @@ such as the `Perl tengwar transcriber`_.
 Troubleshooting
 ---------------
 
-If you get errors such as
-``!pdfTeX error: pdflatex (file Parmaite.ttf): cannot open TrueType font file for reading``,
+If you get errors such as this::
+
+    !pdfTeX error: pdflatex (file Parmaite.ttf): cannot open TrueType font file for reading
+
 try changing the font::
 
     \documentclass{minimal}
@@ -143,18 +161,24 @@ or try explicitly adding the map file::
     \end{document}
 
 Make sure the names of the fonts match the names in ``tengwarscript.map``.
-On Debian, this file is at `</usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map>`_.
 
-You will need to do a lot of renaming of the ``.ttf`` files if you take the manual route (Option 2).
+On Debian, this file is here::
 
-Note: the ``tengtest.tex`` file in the documentation requires the ``texlive-lang-spanish`` Debian package.
+    /usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map
+
+You will need to do a lot of renaming of the ``.ttf`` files
+if you take the manual route (Option 2).
+
+Note: the ``tengtest.tex`` file in the documentation
+requires the ``texlive-lang-spanish`` Debian package.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Provenance status of Tengwar fonts for LaTeX
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The TengwarScript package was updated to v1.3.1 in 2014,
-and it now points to archived URL for the fonts since many of the original websites have been taken down.
+and it now points to archived URL for the fonts
+since many of the original websites have been taken down.
 However, all of the founts can be found with some searching.
 
 ------------------
@@ -265,8 +289,9 @@ The site it has been moved to has the fonts removed:
 
 http://www.acondia.com/fonts/tengwar/index.html
 
-Fortunately, there is an Internet Archive backup
-(thanks to the ``tengwarscript`` package maintainer, Ignacio Fernández Galván, for the link).
+Fortunately, there is an Internet Archive backup.
+(Thanks to the ``tengwarscript`` package maintainer,
+Ignacio Fernández Galván, for the link).
 
 http://web.archive.org/web/20060816050032/http://www.acondia.com/font_tengwar/index.html
 
@@ -281,7 +306,9 @@ http://www.dafont.com/font.php?file=tengwar_teleri
 http://img.dafont.com/dl/?f=tengwar_teleri
 
 The page is on the Internet Archive,
-but not the font files due to DaFont's `robots.txt <http://img.dafont.com/robots.txt>`_.
+but not the font files due to DaFont's `robots.txt`_.
+
+.. _robots.txt: http://img.dafont.com/robots.txt
 
 http://web.archive.org/web/20120222184558/http://www.dafont.com/font.php?file=tengwar_teleri
 
