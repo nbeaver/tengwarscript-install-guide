@@ -95,7 +95,7 @@ cd "$FONT_DIR"
 mkdir -p ~/texmf/fonts/type1/tengwarscript/
 cd ~/texmf/fonts/type1/tengwarscript/
 mkdir -p "unicodeparmaite"
-curl --silent --show-error --remote-name 'http://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
+curl --silent --show-error --remote-name 'https://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
 tar -xf UnicodeTengwarParmaite.tar.gz -C unicodeparmaite
 cd "unicodeparmaite"
 mv parmaite.pfb UnicodeParmaite.pfb
