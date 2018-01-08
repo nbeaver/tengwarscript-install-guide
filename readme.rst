@@ -60,7 +60,7 @@ Installation
 Option 1: Run the `install script`_.
 ++++++++++++++++++++++++++++++++++++
 
-It is a bash script and requires that ``wget`` and ``unzip`` are installed.
+It is a bash script and requires that ``curl`` and ``unzip`` are installed.
 
 If you are doing this for the first time,
 the script will download all the fonts into your ``~/texmf/`` directory.
