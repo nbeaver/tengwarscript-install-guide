@@ -76,8 +76,8 @@ Option 2: Do the same steps as the install script, but manually.
    For example, run ``kpsewhich tengwarscript.sty``.
    If you get an output such as::
    
-    $ kpsewhich tengwarscript.sty
-    /usr/share/texlive/texmf-dist/tex/latex/tengwarscript/tengwarscript.sty
+       $ kpsewhich tengwarscript.sty
+       /usr/share/texlive/texmf-dist/tex/latex/tengwarscript/tengwarscript.sty
    
    then you are fine. If you get a blank, then you need to install it.
    It is on `CTAN`_ and also on most Linux distribution's packages.
@@ -88,7 +88,7 @@ Option 2: Do the same steps as the install script, but manually.
    If you do not run this command,
    you must `add this line to every Tex file`_ that uses Tengwar fonts::
 
-    \pdfmapfile{=tengwarscript.map}
+       \pdfmapfile{=tengwarscript.map}
 
    Some tutorials recommend running ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
 
@@ -98,7 +98,7 @@ Option 2: Do the same steps as the install script, but manually.
    so you don't need administrator privileges.
    If you're not sure where ``texmf`` is, run this command::
 
-       kpsewhich -var-value TEXMFHOME
+       $ kpsewhich -var-value TEXMFHOME
 
 #. Download the Tengwar fonts you want and unzip them there.
 
