@@ -11,8 +11,8 @@ then
     # and matches the documentation.
     FONT_DIR="$(kpsewhich -var-value=TEXMFHOME)/fonts/truetype/tengwarscript"
 else
-    echo "Error: tengwarscript is not installed."
-    exit "$ERROR_CODE"
+    printf 'Error: tengwarscript is not installed.\n'
+    exit 1
 fi
 
 # Terminate as soon as any command fails
