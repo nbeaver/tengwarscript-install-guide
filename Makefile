@@ -1,5 +1,11 @@
-README.html : README.rst
-	rst2html README.rst > README.html
+RST := $(wildcard *.rst)
+HTML := $(patsubst %.rst, %.html, $(RST))
 
-clean :
-	rm -f README.html
+.PHONY : all clean
+all: $(HTML)
+
+%.html: %.rst
+	rst2html $< $@
+
+clean:
+	rm -f -- $(HTML)
