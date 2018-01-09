@@ -22,10 +22,10 @@ This is a guide for getting started producing Tengwar
 with the LaTeX typesetting system.
 It will use the `TengwarScript`_ package.
 TengwarScript does not use Tengwar characters directly,
-since Tengwar is `still being standardized`_ into Unicode.
+since Tengwar `has not yet been standardized into Unicode`_.
 Instead, it uses custom fonts.
 The fonts are not included in the TengwarScript package,
-presumably since the legal status of the fonts is not clear.
+presumably because the legal status of the fonts is not clear.
 The guide includes a `companion script`_
 to automate the downloading, installing, and configuring of the fonts,
 most of which are TrueType fonts.
@@ -40,7 +40,7 @@ but it should be applicable to most LaTeX installs.
 
 .. _including English: http://3rin.gs/tengwar
 .. _TengwarScript: http://www.ctan.org/tex-archive/macros/latex/contrib/tengwarscript
-.. _still being standardized: http://www.evertype.com/standards/csur/tengwar.html
+.. _has not yet been standardized into Unicode: http://www.evertype.com/standards/csur/tengwar.html
 .. _companion script: ./install-tengwar-scripts.sh
 .. _are: http://www.ctan.org/pkg/tolkienfonts
 .. _other: http://www.ctan.org/pkg/elvish
@@ -80,7 +80,7 @@ Option 2: Do the same steps as the install script, but manually.
        /usr/share/texlive/texmf-dist/tex/latex/tengwarscript/tengwarscript.sty
    
    then you are fine. If you get a blank, then you need to install it.
-   It is on `CTAN`_ and also on most Linux distribution's packages.
+   It is on `CTAN`_ and from most Linux distributions.
    On Debian, it is in `texlive-fonts-extra`_.
 
 #. Run ``updmap --enable Map=tengwarscript.map``.
