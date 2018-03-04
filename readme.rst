@@ -134,7 +134,7 @@ you will probably want to use a conversion script,
 such as the `Perl tengwar transcriber`_.
 
 .. _interesting examples: http://tex.stackexchange.com/questions/13015/what-package-allows-elvish-in-tex
-.. _Perl tengwar transcriber: http://djelibeibi.unex.es/tengwar/#transcription
+.. _Perl tengwar transcriber: https://web.archive.org/web/20170827164457/http://djelibeibi.unex.es/tengwar/#transcription
 
 ---------------
 Troubleshooting
