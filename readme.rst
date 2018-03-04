@@ -80,7 +80,7 @@ Option 2: Do the same steps as the install script, but manually.
        /usr/share/texlive/texmf-dist/tex/latex/tengwarscript/tengwarscript.sty
    
    then you are fine. If you get a blank, then you need to install it.
-   It is on `CTAN`_ and from most Linux distributions.
+   It is on `CTAN`_ and packaged in most Linux distributions.
    On Debian, it is in `texlive-fonts-extra`_.
 
 #. Run ``updmap --enable Map=tengwarscript.map``.
@@ -90,7 +90,8 @@ Option 2: Do the same steps as the install script, but manually.
 
        \pdfmapfile{=tengwarscript.map}
 
-   Some tutorials recommend running ``mktexlsr`` or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
+   Some tutorials recommend running ``mktexlsr``
+   or ``texhash`` on ``~/texmf`` at this point. This is unnecessary.
 
 #. Make the directory ``~/texmf/fonts/truetype/``.
 
