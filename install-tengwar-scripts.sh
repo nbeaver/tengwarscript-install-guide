@@ -3,18 +3,18 @@
 # License: MIT
 
 # Check the tengwarscript package is installed.
-if kpsewhich tengwarscript.sty > /dev/null
+if ! kpsewhich tengwarscript.sty > /dev/null
 then
-    # Set the directory to put the fonts in.
-    # This could also be just $TEXMFHOME/fonts/truetype.
-    # The additional 'tengwarscript' directory is a little neater, though,
-    # and matches the documentation.
-    FONT_DIR="$(kpsewhich -var-value=TEXMFHOME)/fonts/truetype/tengwarscript"
-    FONT_DIR_TYPE1="$(kpsewhich -var-value=TEXMFHOME)/fonts/type1/tengwarscript"
-else
     printf 'Error: tengwarscript is not installed.\n'
     exit 1
 fi
+
+# Set the directory to put the fonts in.
+# This could also be just $TEXMFHOME/fonts/truetype.
+# The additional 'tengwarscript' directory is a little neater, though,
+# and matches the documentation.
+FONT_DIR="$(kpsewhich -var-value=TEXMFHOME)/fonts/truetype/tengwarscript"
+FONT_DIR_TYPE1="$(kpsewhich -var-value=TEXMFHOME)/fonts/type1/tengwarscript"
 
 # Terminate as soon as any command fails
 set -e
