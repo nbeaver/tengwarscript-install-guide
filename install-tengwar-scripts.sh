@@ -10,6 +10,7 @@ then
     # The additional 'tengwarscript' directory is a little neater, though,
     # and matches the documentation.
     FONT_DIR="$(kpsewhich -var-value=TEXMFHOME)/fonts/truetype/tengwarscript"
+    FONT_DIR_TYPE1="$(kpsewhich -var-value=TEXMFHOME)/fonts/type1/tengwarscript"
 else
     printf 'Error: tengwarscript is not installed.\n'
     exit 1
@@ -94,14 +95,13 @@ cd teleri
 mv 'Tengwar Telerin.ttf' 'TengwarTelerin.ttf'
 cd "$FONT_DIR"
 
-mkdir -p ~/texmf/fonts/type1/tengwarscript/
-cd ~/texmf/fonts/type1/tengwarscript/
+mkdir -p "$FONT_DIR_TYPE1"
+cd "$FONT_DIR_TYPE1"
 mkdir -p "unicodeparmaite"
 curl --silent --show-error --remote-name 'https://www.uv.es/~conrad/UnicodeTengwarParmaite.tar.gz'
 tar -xf UnicodeTengwarParmaite.tar.gz -C unicodeparmaite
 cd "unicodeparmaite"
 mv parmaite.pfb UnicodeParmaite.pfb
-cd ~/texmf/fonts/type1/tengwarscript/
 
 # DONE: update names to match /usr/share/texlive/texmf-dist/fonts/map/dvips/tengwarscript/tengwarscript.map
 # DONE: install unicodeparmaite as well
