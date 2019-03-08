@@ -2,6 +2,34 @@
 # Author: Nathaniel Morck Beaver (nathanielmbeaver@gmail.com)
 # License: MIT
 
+# Check that the necessary commands are available.
+if ! type curl > /dev/null
+then
+    printf "Error: could not find 'curl'.\n"
+    exit 1
+fi
+if ! type unzip > /dev/null
+then
+    printf "Error: could not find 'unzip'.\n"
+    exit 1
+fi
+if ! type updmap > /dev/null
+then
+    printf "Error: could not find 'updmap'.\n"
+    exit 1
+fi
+if ! type kpsewhich > /dev/null
+then
+    printf "Error: could not find 'updmap'.\n"
+    exit 1
+fi
+
+if ! type kpsewhich > /dev/null
+then
+    printf "Error: could not find 'kpsewhich'\n"
+    exit 1
+fi
+
 # Check the tengwarscript package is installed.
 if ! kpsewhich tengwarscript.sty > /dev/null
 then
