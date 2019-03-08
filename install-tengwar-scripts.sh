@@ -24,7 +24,9 @@ unset CDPATH
 # https://bosker.wordpress.com/2012/02/12/bash-scripters-beware-of-the-cdpath/
 
 # Enable the font maps in the tengwarscript package.
-updmap --quiet --enable Map=tengwarscript.map
+updmap --user --quiet --enable Map=tengwarscript.map
+# --user is now required.
+# https://tug.org/texlive/scripts-sys-user.html
 
 mkdir -p "$FONT_DIR"
 cd "$FONT_DIR"
