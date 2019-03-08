@@ -1,8 +1,10 @@
 RST := $(wildcard *.rst)
 HTML := $(patsubst %.rst, %.html, $(RST))
 
-.PHONY : all clean
-all: $(HTML)
+.PHONY : shellcheck clean
+
+shellcheck :
+	shellcheck install-tengwar-scripts.sh
 
 %.html: %.rst
 	rst2html $< $@
