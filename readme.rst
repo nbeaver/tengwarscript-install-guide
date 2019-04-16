@@ -242,7 +242,7 @@ Tengwar Formal
 
 Website still up, backup available on Internet Archive.
 
-http://tengwarformal.limes.com.pl/
+http://tengwarformal.limes.com.pl/index.php.en
 
 http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip
 
