@@ -76,14 +76,14 @@ mv Parmaite_alt.TTF Parmaite_alt.ttf
 cd "$FONT_DIR"
 
 mkdir -p elfica
-curl --silent --show-error --remote-name 'http://www.oocities.org/enrombell/files/Pack_en.zip'
+curl --silent --show-error --remote-name 'http://www.oocities.org/enrombell/files/Pack_en.zip' || curl --silent --show-error --remote-name 'http://www.geocities.ws/enrombell/files/Pack_en.zip'
 unzip -q -u Pack_en.zip -d "$FONT_DIR/elfica"
 cd elfica
 mv Elfica200841se07.ttf Elfica32.ttf
 cd "$FONT_DIR"
 
 mkdir -p gothika
-curl --silent --show-error --remote-name 'http://www.oocities.org/enrombell/files/Gothika_en.zip'
+curl --silent --show-error --remote-name 'http://www.oocities.org/enrombell/files/Gothika_en.zip' || curl --silent --show-error --remote-name 'http://www.geocities.ws/enrombell/files/Gothika_en.zip'
 unzip -q -u Gothika_en.zip -d "$FONT_DIR/gothika"
 cd gothika
 mv Gothika2008-se001.ttf TengwarGothika050.ttf
