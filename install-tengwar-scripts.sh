@@ -68,7 +68,7 @@ cd "$FONT_DIR"
 # later.
 
 mkdir -p parmaite
-curl --silent --show-error --remote-name 'http://at.mansbjorkman.net/Downloads/Parmaite2.zip'
+curl --silent --show-error --remote-name 'http://at.boktypografen.se/Downloads/Parmaite2.zip' 
 unzip -q -u Parmaite2.zip -d "$FONT_DIR/parmaite"
 cd parmaite
 mv Parmaite.TTF Parmaite.ttf
@@ -90,7 +90,7 @@ mv Gothika2008-se001.ttf TengwarGothika050.ttf
 cd "$FONT_DIR"
 
 mkdir -p formal
-curl --silent --show-error --remote-name 'http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip'
+curl --silent --show-error --remote-name 'http://web.archive.org/web/20120716182423/http://tengwarformal.limes.com.pl/fonts/TengwarFormal-12c-ttf-pc.zip'
 unzip -q -u TengwarFormal-12c-ttf-pc.zip -d "$FONT_DIR/formal"
 cd "formal/TengwarFormal-12c-ttf-pc/fonts"
 mv TengwarFormal12b.ttf TengwarFormal12.ttf
