@@ -68,7 +68,7 @@ cd "$FONT_DIR"
 # later.
 
 mkdir -p parmaite
-curl --silent --show-error --remote-name 'http://at.mansbjorkman.net/Downloads/Parmaite2.zip'
+curl --silent --show-error --remote-name 'http://at.boktypografen.se/Downloads/Parmaite2.zip'
 unzip -q -u Parmaite2.zip -d "$FONT_DIR/parmaite"
 cd parmaite
 mv Parmaite.TTF Parmaite.ttf
